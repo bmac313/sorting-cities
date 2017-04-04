@@ -1,7 +1,17 @@
 package org.launchcode.comparators;
 
-/**
- * Created by Brendan on 4/3/2017.
- */
-public class PopulationComparator {
+import org.launchcode.City;
+
+import java.util.Comparator;
+
+public class PopulationComparator implements Comparator<City>{
+    @Override
+    public int compare(City o1, City o2) {
+
+        Integer a = o1.getPopulation();
+        Integer b = o2.getPopulation();
+
+        return a.compareTo(b);
+
+    }
 }

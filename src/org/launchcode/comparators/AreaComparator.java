@@ -1,7 +1,18 @@
 package org.launchcode.comparators;
 
-/**
- * Created by Brendan on 4/3/2017.
- */
-public class AreaComparator {
+import org.launchcode.City;
+
+import java.util.Comparator;
+
+public class AreaComparator implements Comparator<City> {
+    @Override
+    public int compare(City o1, City o2) {
+
+        Double a = o1.getArea();
+        Double b = o2.getArea();
+        int result = 0;
+
+        return a.compareTo(b);
+
+    }
 }
