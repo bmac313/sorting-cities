@@ -8,9 +8,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by LaunchCode
- */
 public class CityData {
 
     private static final String DATA_FILE = "resources/city_data.csv";
